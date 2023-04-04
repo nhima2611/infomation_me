@@ -29,7 +29,7 @@ const Home: NextPage<IHomeProps> = ({ jobs, projects, skills }) => {
 
   useEffect(() => {
     const data = localStorage.getItem("themeValue");
-    setTheme(data === "light" || !data ? "light" : "dark");
+    setTheme("dark");
   }, []);
 
   useEffect(() => {
